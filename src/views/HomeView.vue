@@ -3,8 +3,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <span class="hero-badge">FTC Team #16244 · Dunlap, IL</span>
-        <h1>We Are The <span class="highlight">Trailblazers</span></h1>
+<h1>We Are The <span class="highlight">Trailblazers</span></h1>
         <p class="hero-sub">
           A 7-year FTC team from Dunlap, Illinois competing in the Peoria League.
           We blaze new paths in engineering, programming, and community impact.
