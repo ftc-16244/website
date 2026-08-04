@@ -68,8 +68,8 @@ onMounted(() => {
   document.addEventListener('mousemove', onMouseMove)
 
   function animGear() {
-    gx += (mx - gx) * 0.7
-    gy += (my - gy) * 0.7
+    gx += (mx - gx) * 0.92
+    gy += (my - gy) * 0.92
     angle += 1.8 + moveSpeed * 0.5
     moveSpeed *= 0.88
     gearEl.style.transform = `translate(${gx}px, ${gy}px) rotate(${angle}deg)`
