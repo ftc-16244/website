@@ -6,7 +6,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/trailblazers-16244/',
   plugins: [
     vue(),
     vueDevTools(),
