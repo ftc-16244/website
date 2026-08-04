@@ -186,12 +186,12 @@
 }
 
 .hero-logo-img {
-  width: 360px;
-  height: 360px;
+  width: 420px;
+  height: 420px;
   object-fit: cover;
   border-radius: 50%;
-  -webkit-mask-image: radial-gradient(circle, black 48%, transparent 75%);
-  mask-image: radial-gradient(circle, black 48%, transparent 75%);
+  -webkit-mask-image: radial-gradient(circle, black 62%, transparent 82%);
+  mask-image: radial-gradient(circle, black 62%, transparent 82%);
   animation: float 4s ease-in-out infinite;
 }
 
