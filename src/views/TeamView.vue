@@ -70,7 +70,6 @@ export default {
       members: [
         { name: 'Anvita', role: 'Presenter', bio: 'Led team presentations and represented the Trailblazers at judging sessions throughout the season.', photo: null },
         { name: 'Sanjit', role: 'Chassis Lead', bio: 'Designed the state robot chassis: short body with closer drive wheels, black polycarbonate plates with blue accents.', photo: '/images/team/headshots/photo_A.jpg' },
-        { name: 'Ritika', role: 'Strategy Lead', bio: 'Developed the team\'s game strategy, prioritizing high-volume artifact scoring and ranking point optimization.', photo: null },
         { name: 'Akash', role: 'Intake / Transfer', bio: 'Built the mecanum vectored intake with custom Manar wheels and the open waterslide transfer system.', photo: null },
         { name: 'Colter Hardy', role: 'Lead Programmer', bio: 'Leads the programming sub-team, writing autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.', photo: null },
         { name: 'Abhijeet', role: 'Shooter Lead', bio: 'Engineered the custom 3D-printed turret bearing (240° rotation) and dual-motor flywheel shooter.', photo: '/images/team/headshots/photo_C.jpg' },
@@ -92,7 +91,7 @@ export default {
         {
           name: 'Strategy & Scouting',
           desc: 'Analyzed game rules, scouted opponents, ran SWOT analyses after each meet, and set season priorities.',
-          members: ['Ritika']
+          members: ['[ Member ]']
         },
         {
           name: 'Business & Outreach',
