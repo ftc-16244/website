@@ -4,7 +4,7 @@
       <div class="container">
         <h1>Meet The Team</h1>
         <div class="divider"></div>
-        <p>9 members. 2 coaches. One goal.</p>
+        <p>8 members. 2 coaches. One goal.</p>
       </div>
     </section>
 
