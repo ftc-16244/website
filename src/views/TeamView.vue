@@ -75,14 +75,14 @@ export default {
         { name: 'Colter Hardy', role: 'Lead Programmer', bio: 'Leads the programming sub-team, writing autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.', photo: null },
         { name: 'Abhijeet', role: 'Shooter Lead', bio: 'Engineered the custom 3D-printed turret bearing (240° rotation) and dual-motor flywheel shooter.', photo: '/images/team/headshots/photo_C.jpg' },
         { name: 'Manar', role: 'Captain / Redesign', bio: 'Led the mid-season robot redesign after coordinating with FRC expert Ben Martin from Team 2481.', photo: null },
-        { name: '[ Member ]', role: '[ Role ]', bio: '[ Bio placeholder — add your remaining team members here. ]', photo: null },
-        { name: '[ Member ]', role: '[ Role ]', bio: '[ Bio placeholder ]', photo: null },
+        { name: 'Aditya', role: 'Mechanical / CAD', bio: 'Contributes to robot design and CAD modeling, helping build and iterate on mechanical systems throughout the season.', photo: null },
+        { name: 'Samuel', role: 'Mechanical / CAD', bio: 'Works on robot construction and CAD, bringing new ideas to the mechanical sub-team as a first-year member.', photo: null },
       ],
       subteams: [
         {
           name: 'Mechanical & Design',
           desc: 'Responsible for chassis design, robot assembly, and all physical mechanisms including intake, transfer, and shooter.',
-          members: ['Sanjit', 'Akash', 'Manar', 'Abhijeet']
+          members: ['Sanjit', 'Akash', 'Manar', 'Abhijeet', 'Aditya', 'Samuel']
         },
         {
           name: 'Programming',
