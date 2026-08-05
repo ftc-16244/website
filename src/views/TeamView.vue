@@ -72,7 +72,7 @@ export default {
         { name: 'Sanjit', role: 'Chassis Lead', bio: 'Designed the state robot chassis: short body with closer drive wheels, black polycarbonate plates with blue accents.', photo: '/images/team/headshots/photo_A.jpg' },
         { name: 'Ritika', role: 'Strategy Lead', bio: 'Developed the team\'s game strategy, prioritizing high-volume artifact scoring and ranking point optimization.', photo: null },
         { name: 'Akash', role: 'Intake / Transfer', bio: 'Built the mecanum vectored intake with custom Manar wheels and the open waterslide transfer system.', photo: null },
-        { name: 'Rishaan', role: 'Programming / Analysis', bio: 'Conducted post-meet SWOT analyses and contributed to autonomous programming and drive code.', photo: '/images/team/headshots/photo_B.jpg' },
+        { name: 'Colter Hardy', role: 'Lead Programmer', bio: 'Leads the programming sub-team, writing autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.', photo: null },
         { name: 'Abhijeet', role: 'Shooter Lead', bio: 'Engineered the custom 3D-printed turret bearing (240° rotation) and dual-motor flywheel shooter.', photo: '/images/team/headshots/photo_C.jpg' },
         { name: 'Manar', role: 'Captain / Redesign', bio: 'Led the mid-season robot redesign after coordinating with FRC expert Ben Martin from Team 2481.', photo: null },
         { name: '[ Member ]', role: '[ Role ]', bio: '[ Bio placeholder — add your remaining team members here. ]', photo: null },
@@ -87,12 +87,12 @@ export default {
         {
           name: 'Programming',
           desc: 'Wrote the autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.',
-          members: ['Rishaan', '[ Member ]']
+          members: ['Colter Hardy', '[ Member ]']
         },
         {
           name: 'Strategy & Scouting',
           desc: 'Analyzed game rules, scouted opponents, ran SWOT analyses after each meet, and set season priorities.',
-          members: ['Ritika', 'Rishaan']
+          members: ['Ritika']
         },
         {
           name: 'Business & Outreach',
