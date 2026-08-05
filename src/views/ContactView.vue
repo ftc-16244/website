@@ -25,7 +25,7 @@
           <div style="margin-top:2rem">
             <h3 style="color:var(--blue-light); margin-bottom:1rem">Follow Us</h3>
             <div class="social-links">
-              <a href="https://www.instagram.com/the_trailblazers_16244" class="social-btn" target="_blank">Instagram</a>
+              <a href="https://www.instagram.com/trailblazers-16244" class="social-btn" target="_blank">Instagram</a>
               <a href="https://www.youtube.com/@ftctrailblazers16244" class="social-btn" target="_blank">YouTube</a>
             </div>
           </div>
