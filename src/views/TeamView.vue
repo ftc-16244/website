@@ -72,7 +72,7 @@ export default {
         { name: 'Colter Hardy', role: 'Programming Team', photo: '/images/team/headshots/photo_colter.jpg' },
         { name: 'Abhijeet', role: 'Mechanical Team', photo: '/images/team/headshots/photo_C.jpg' },
         { name: 'Aditya', role: 'Mechanical Team', photo: null },
-        { name: 'Samuel', role: 'Mechanical Team', photo: null },
+        { name: 'Samuel', role: 'Mechanical Team', photo: '/images/team/headshots/photo_samuel.jpg' },
       ],
       subteams: [
         { name: 'Mechanical Team', members: ['Sanjit', 'Akash', 'Abhijeet', 'Aditya', 'Samuel'] },
