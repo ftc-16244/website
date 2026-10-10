@@ -134,7 +134,7 @@ export default {
 
 <style scoped>
 .page-header {
-  background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
+  background: var(--blue-primary);
   padding: 5rem 0;
   text-align: center;
 }
@@ -142,7 +142,7 @@ export default {
 .page-header p { color: var(--blue-lightest); font-size: 1.1rem; }
 
 .stats-section {
-  background: linear-gradient(to right, var(--blue-primary), var(--blue-medium));
+  background: var(--blue-primary);
   padding: 3rem 0;
 }
 .stats-grid {

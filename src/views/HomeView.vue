@@ -5,8 +5,8 @@
       <div class="hero-content">
 <h1>We Are The <span class="highlight">Trailblazers</span></h1>
         <p class="hero-sub">
-          A 7-year FTC team from Dunlap, Illinois competing in the Peoria League.
-          We blaze new paths in engineering, programming, and community impact.
+          We're a FIRST Tech Challenge team from Dunlap, Illinois, in our seventh year in the
+          Peoria League. This season we built three robots and made it to State.
         </p>
         <p class="hero-motto">"Do not go where the path may lead, go instead where there is no path and leave a trail."</p>
         <div class="hero-buttons">
@@ -15,7 +15,6 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-glow-orb"></div>
         <img src="/images/logo_circle.png" alt="The Trailblazers FTC #16244" class="hero-logo-img" />
       </div>
     </section>
@@ -44,6 +43,12 @@
       </div>
     </section>
 
+    <!-- Robot -->
+    <section class="robot-feature">
+      <img src="/images/ftc_photos/IMG_9867.jpg" alt="The Trailblazers robot on the build table" class="robot-feature-img" />
+      <p class="robot-feature-caption">The robot on the build table. It started as a single design and ended up as three.</p>
+    </section>
+
     <!-- About Snippet -->
     <section class="section">
       <div class="container about-snippet">
@@ -51,13 +56,11 @@
           <h2 class="section-title" style="text-align:left">Who We Are</h2>
           <div class="divider" style="margin-left:0"></div>
           <p>
-            The Trailblazers (FTC #16244) are a diverse group of 8 members from many different schools
-            in the Dunlap, Illinois area, competing in the Peoria League. For 7 seasons we've built
-            competitive robots, grown as engineers, and given back to our community through STEM outreach.
+            There are 8 of us, from a bunch of different schools around Dunlap, and we compete in the
+            Peoria League. Most of what we know about building robots we learned by building them badly first.
           </p>
           <p style="margin-top:1rem;">
-            Our goal: seek new mentors, expand our team, connect with our community, and continue
-            making competitive robots, while having fun along the way.
+            We're still looking for mentors, still looking for new members, and still having fun with it.
           </p>
           <RouterLink to="/about" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block">Learn More</RouterLink>
         </div>
@@ -67,29 +70,16 @@
       </div>
     </section>
 
-    <!-- Current Season -->
-    <section class="section" style="background-color: rgba(0,56,184,0.15);">
+    <!-- This Season -->
+    <section class="section season-section">
       <div class="container">
-        <h2 class="section-title">Current Season</h2>
-        <p class="section-subtitle">2025–2026 | DECODE</p>
-        <div class="divider"></div>
-        <div class="grid-3">
-          <div class="card" style="text-align:center">
-                        <h3>Iterative Design</h3>
-            <p style="color: var(--gray); margin-top: 0.5rem">Three full robot redesigns from Meet 1 through State, with a custom turret shooter, mecanum intake, and open waterslide transfer.</p>
-          </div>
-          <div class="card" style="text-align:center">
-                        <h3>AIMBOT</h3>
-            <p style="color: var(--gray); margin-top: 0.5rem">Built a fully automatic aiming system using odometry. No Limelight needed. Drastically improved shot accuracy over manual aim.</p>
-          </div>
-          <div class="card" style="text-align:center">
-                        <h3>Outreach</h3>
-            <p style="color: var(--gray); margin-top: 0.5rem">Hosted workshops on CAD, sensors, portfolio & judging. Ran a demo at Caterpillar's Engineering Day for 50+ elementary students.</p>
-          </div>
+        <h2 class="section-title" style="text-align:left">This Season: DECODE</h2>
+        <div class="divider" style="margin-left:0"></div>
+        <div class="story" v-for="st in stories" :key="st.title">
+          <h3>{{ st.title }}</h3>
+          <p>{{ st.text }}</p>
         </div>
-        <div style="text-align:center; margin-top: 2rem">
-          <RouterLink to="/competitions" class="btn btn-outline">View Full Season →</RouterLink>
-        </div>
+        <RouterLink to="/competitions" class="btn btn-outline" style="margin-top:2rem">See the whole season</RouterLink>
       </div>
     </section>
 
@@ -104,6 +94,20 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      stories: [
+        { title: 'We rebuilt the robot after talking to an FRC mentor', text: "After Meet 1 we talked to Ben Martin from FRC Team 2481, and Manar led a full redesign. By Meet 3 we had a mecanum intake, an open waterslide transfer, and a turret that turns 240 degrees." },
+        { title: 'AIMBOT', text: "We wanted the robot to aim itself without a Limelight, so we wrote it to use odometry. It took a while, but it's a lot more accurate than aiming by hand." },
+        { title: 'Engineering Day at the Riverfront Museum', text: "In February we took the robot to Caterpillar's Engineering Day in Peoria and ran it for more than 50 elementary students. Seeing them react to it was one of the best parts of the year." },
+      ]
+    }
+  }
+}
+</script>
 
 <style scoped>
 .hero {
@@ -138,12 +142,17 @@
   line-height: 1.1;
 }
 
-.highlight {
-  background: linear-gradient(135deg, var(--blue-medium), var(--blue-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.highlight { color: var(--accent); }
+
+.robot-feature { background: var(--white); text-align: center; padding: 2rem 0 1rem; }
+.robot-feature-img { width: 100%; max-height: 640px; object-fit: contain; display: block; }
+.robot-feature-caption { color: var(--blue-darkest); font-size: 0.95rem; padding: 0.8rem 2rem 1rem; }
+
+.season-section { background: var(--blue-primary); }
+.story { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.25); }
+.story h3 { font-size: 1.3rem; }
+.story p { color: var(--blue-lightest); line-height: 1.7; }
+@media (max-width: 700px) { .story { grid-template-columns: 1fr; gap: 0.5rem; } }
 
 .hero-sub {
   color: var(--gray);
@@ -169,21 +178,6 @@
 }
 
 .hero-visual { flex: 1; display: flex; justify-content: center; align-items: center; position: relative; }
-
-.hero-glow-orb {
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,87,255,0.25) 0%, rgba(0,87,255,0.08) 50%, transparent 70%);
-  animation: pulse-orb 4s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes pulse-orb {
-  0%, 100% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.12); opacity: 1; }
-}
 
 .hero-logo-img {
   width: 360px;
@@ -220,7 +214,6 @@
   width: 100%;
   border-radius: 12px;
   border: 2px solid var(--blue-primary);
-  box-shadow: 0 8px 30px rgba(0,87,255,0.2);
 }
 
 @media (max-width: 900px) {

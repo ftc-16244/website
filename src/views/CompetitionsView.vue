@@ -133,7 +133,7 @@ export default {
 
 <style scoped>
 .page-header {
-  background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
+  background: var(--blue-primary);
   padding: 5rem 0;
   text-align: center;
 }
@@ -187,7 +187,7 @@ export default {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, var(--blue-medium), var(--blue-primary));
+  background: var(--blue-primary);
 }
 
 .timeline-item {
