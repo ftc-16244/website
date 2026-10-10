@@ -59,7 +59,7 @@
               <textarea v-model="form.message" placeholder="[ Write your message here... ]" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
-            <p v-if="submitted" class="success-msg"> Message sent! We'll get back to you soon.</p>
+            <p v-if="submitted" class="success-msg"> Your email app should have opened with the message ready to send. Just hit send.</p>
           </form>
         </div>
       </div>
@@ -110,9 +110,13 @@ export default {
   },
   methods: {
     submitForm() {
+      const f = this.form
+      const subject = f.subject || 'Message from the website'
+      const body = `Name: ${f.name}\nEmail: ${f.email}\n\n${f.message}`
+      window.location.href = `mailto:trailblazers16244@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
       this.submitted = true
       this.form = { name: '', email: '', subject: '', message: '' }
-      setTimeout(() => { this.submitted = false }, 5000)
+      setTimeout(() => { this.submitted = false }, 8000)
     }
   }
 }
