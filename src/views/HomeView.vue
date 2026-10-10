@@ -16,7 +16,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-glow-orb"></div>
-        <img src="/images/logo_vertical.png" alt="The Trailblazers FTC #16244" class="hero-logo-img" />
+        <img src="/images/logo_circle.png" alt="The Trailblazers FTC #16244" class="hero-logo-img" />
       </div>
     </section>
 
@@ -188,10 +188,7 @@
 .hero-logo-img {
   width: 420px;
   height: 420px;
-  object-fit: cover;
-  border-radius: 50%;
-  -webkit-mask-image: radial-gradient(circle, black 62%, transparent 82%);
-  mask-image: radial-gradient(circle, black 62%, transparent 82%);
+  object-fit: contain;
   animation: float 4s ease-in-out infinite;
 }
 
