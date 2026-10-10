@@ -15,23 +15,22 @@
         <h2 class="section-title">2026–2027: BIOBUZZ</h2>
         <div class="divider"></div>
 
+        <p class="biobuzz-intro">
+          BIOBUZZ, presented by RTX, is the 2026–27 FIRST Tech Challenge game and part of the FIRST CANOPY
+          biodiversity season. Two-team alliances, red and blue, compete on a 12-foot square field in a
+          match that is all about pollination. The game manual also leans on the "spirit of the rule,"
+          which gives referees more room for good-faith calls.
+        </p>
+
         <div class="biobuzz-grid">
-          <div>
-            <p style="color:var(--gray); line-height:1.8">
-              BIOBUZZ, presented by RTX, is the 2026–27 FIRST Tech Challenge game and part of the FIRST CANOPY
-              biodiversity season. Two-team alliances, red and blue, compete on a 12-foot square field in a
-              match that is all about pollination. The game manual also leans on the "spirit of the rule,"
-              which gives referees more room for good-faith calls.
-            </p>
-            <div class="awards-box" style="margin-top:1.5rem">
-              <h4>How a Match Works</h4>
-              <ul>
-                <li>30-second autonomous period</li>
-                <li>2 minutes of driver control</li>
-                <li>Pollen: roughly 3-inch yellow balls that both alliances can use</li>
-                <li>Nectar: larger balls in alliance colors (8 red, 8 blue). A robot can only handle its own color.</li>
-              </ul>
-            </div>
+          <div class="awards-box">
+            <h4>How a Match Works</h4>
+            <ul>
+              <li>30-second autonomous period</li>
+              <li>2 minutes of driver control</li>
+              <li>Pollen: roughly 3-inch yellow balls that both alliances can use</li>
+              <li>Nectar: larger balls in alliance colors (8 red, 8 blue). A robot can only handle its own color.</li>
+            </ul>
           </div>
           <div class="awards-box">
             <h4>Field Elements</h4>
@@ -42,7 +41,7 @@
           </div>
         </div>
 
-        <h3 style="margin-top:3rem; color:var(--blue-light); font-size:1.4rem; margin-bottom:1.5rem">Season Timeline</h3>
+        <h3 style="margin-top:3rem; color:var(--blue-light); font-size:1.4rem; margin-bottom:1.5rem; text-align:center">Season Timeline</h3>
         <div class="timeline">
           <div class="timeline-item done">
             <div class="timeline-dot"></div>
@@ -94,7 +93,7 @@
         </div>
 
         <!-- Season Timeline -->
-        <h3 style="margin-top:3rem; color:var(--blue-light); font-size:1.4rem; margin-bottom:1.5rem">Season Timeline</h3>
+        <h3 style="margin-top:3rem; color:var(--blue-light); font-size:1.4rem; margin-bottom:1.5rem; text-align:center">Season Timeline</h3>
         <div class="timeline">
           <div class="timeline-item" v-for="ev in timeline" :key="ev.name" :class="{ done: ev.done }">
             <div class="timeline-dot"></div>
@@ -197,7 +196,8 @@ export default {
 .page-header p { color: var(--blue-lightest); font-size: 1.1rem; }
 
 .season-badge {
-  display: inline-block;
+  display: table;
+  margin: 0 auto;
   background-color: var(--blue-medium);
   color: var(--white);
   padding: 0.4rem 1.2rem;
@@ -234,11 +234,12 @@ export default {
 .awards-box ul { list-style: none; }
 .awards-box li { color: var(--gray); padding: 0.4rem 0; border-bottom: 1px solid rgba(0,87,255,0.1); }
 
-.biobuzz-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+.biobuzz-intro { color: var(--gray); line-height: 1.8; max-width: 800px; margin: 0 auto 2rem; text-align: center; }
+.biobuzz-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; }
 @media (max-width: 768px) { .biobuzz-grid { grid-template-columns: 1fr; } }
 
 /* Timeline */
-.timeline { position: relative; padding-left: 2rem; }
+.timeline { position: relative; padding-left: 2rem; max-width: 720px; margin: 0 auto; }
 .timeline::before {
   content: '';
   position: absolute;
