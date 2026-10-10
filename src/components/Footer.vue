@@ -33,7 +33,7 @@
           <ul>
             <li><a href="https://www.instagram.com/the_trailblazers_16244" target="_blank">Instagram</a></li>
             <li><a href="https://www.youtube.com/@ftctrailblazers16244" target="_blank">YouTube</a></li>
-            <li><a href="mailto:trailblazers16244@gmail.com">trailblazers16244@gmail.com</a></li>
+            <li><a href="mailto:ftc16244@gmail.com">ftc16244@gmail.com</a></li>
             <li><a href="https://www.firstinspires.org" target="_blank">FIRST Inspires</a></li>
           </ul>
         </div>

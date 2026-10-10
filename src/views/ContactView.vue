@@ -75,7 +75,7 @@ export default {
       submitted: false,
       form: { name: '', email: '', subject: '', message: '' },
       info: [
-        { label: 'Email', value: 'trailblazers16244@gmail.com', href: 'mailto:trailblazers16244@gmail.com' },
+        { label: 'Email', value: 'ftc16244@gmail.com', href: 'mailto:ftc16244@gmail.com' },
         { label: 'Location', value: 'Dunlap, Illinois', href: null },
         { label: 'League', value: 'Peoria FTC League', href: null },
         { label: 'Coaches', value: '2 Coaches · 8 Members', href: null },
@@ -91,7 +91,7 @@ export default {
       const f = this.form
       const subject = f.subject || 'Message from the website'
       const body = `Name: ${f.name}\nEmail: ${f.email}\n\n${f.message}`
-      window.location.href = `mailto:trailblazers16244@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      window.location.href = `mailto:ftc16244@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
       this.submitted = true
       this.form = { name: '', email: '', subject: '', message: '' }
       setTimeout(() => { this.submitted = false }, 8000)
