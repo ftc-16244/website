@@ -183,7 +183,7 @@ export default {
 .timeline::before {
   content: '';
   position: absolute;
-  left: 0.4rem;
+  left: 6px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -199,7 +199,7 @@ export default {
 
 .timeline-dot {
   position: absolute;
-  left: -1.65rem;
+  left: -2rem;
   top: 0.3rem;
   width: 14px;
   height: 14px;
