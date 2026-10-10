@@ -65,22 +65,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section" style="background-color: rgba(13,71,161,0.15)">
-      <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="divider"></div>
-        <div class="faq-list">
-          <div class="faq-item" v-for="faq in faqs" :key="faq.q" @click="faq.open = !faq.open">
-            <div class="faq-question">
-              <span>{{ faq.q }}</span>
-              <span class="faq-arrow" :class="{ rotated: faq.open }"></span>
-            </div>
-            <div class="faq-answer" v-if="faq.open">{{ faq.a }}</div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 </template>
 
@@ -95,12 +79,6 @@ export default {
         { label: 'Location', value: 'Dunlap, Illinois', href: null },
         { label: 'League', value: 'Peoria FTC League', href: null },
         { label: 'Coaches', value: '2 Coaches · 8 Members', href: null },
-      ],
-      faqs: [
-        { q: 'How can I join the Trailblazers?', a: '[ Describe tryout process, requirements, and when recruitment opens. ]', open: false },
-        { q: 'How can my company sponsor the team?', a: '[ Describe sponsorship tiers and how to reach out. ]', open: false },
-        { q: 'Can you come to our school for a STEM demo?', a: '[ Describe your outreach availability and how to book you. ]', open: false },
-        { q: 'When is your next competition?', a: '[ Add your competition schedule or point to the Competitions page. ]', open: false },
       ]
     }
   },
@@ -190,28 +168,6 @@ export default {
 .form-group select option { background-color: var(--blue-darkest); }
 
 .success-msg { color: #66bb6a; text-align: center; margin-top: 1rem; font-weight: 600; }
-
-.faq-list { max-width: 800px; margin: 0 auto; }
-.faq-item {
-  border: 1px solid var(--blue-primary);
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
-  overflow: hidden;
-  cursor: pointer;
-}
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 1.5rem;
-  background-color: rgba(13,71,161,0.3);
-  font-weight: 600;
-  transition: background 0.2s;
-}
-.faq-item:hover .faq-question { background-color: rgba(13,71,161,0.5); }
-.faq-arrow { transition: transform 0.3s; font-size: 0.75rem; color: var(--blue-light); }
-.faq-arrow.rotated { transform: rotate(180deg); }
-.faq-answer { padding: 1.2rem 1.5rem; color: var(--gray); line-height: 1.7; }
 
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; }
