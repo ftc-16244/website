@@ -16,7 +16,7 @@
           <div class="divider" style="margin-left:0"></div>
           <p>
             The Trailblazers (#16244) are a 7-year FIRST Tech Challenge team based in Dunlap, Illinois,
-            competing in the Peoria League. We are a diverse group of 7 members drawn from many different
+            competing in the Peoria League. We are a diverse group of 8 members drawn from many different
             schools, united by a passion for robotics and engineering.
           </p>
           <p style="margin-top: 1rem;">
@@ -28,7 +28,7 @@
             <span class="tag">Dunlap, IL</span>
             <span class="tag">Peoria League</span>
             <span class="tag">7 Seasons</span>
-            <span class="tag">7 Members</span>
+            <span class="tag">8 Members</span>
             <span class="tag">2 Coaches</span>
           </div>
         </div>

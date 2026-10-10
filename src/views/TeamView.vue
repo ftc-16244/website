@@ -4,7 +4,7 @@
       <div class="container">
         <h1>Meet The Team</h1>
         <div class="divider"></div>
-        <p>7 members. 2 coaches. One goal.</p>
+        <p>8 members. 2 coaches. One goal.</p>
       </div>
     </section>
 
@@ -70,13 +70,14 @@ export default {
         { name: 'Sanjit', role: 'Mechanical Team', photo: '/images/team/headshots/photo_A.jpg' },
         { name: 'Akash', role: 'Mechanical Team', photo: '/images/team/headshots/photo_akash.jpg' },
         { name: 'Colter Hardy', role: 'Programming Team', photo: '/images/team/headshots/photo_colter.jpg' },
+        { name: 'Thanishka Janumpally', role: 'Programming Team', photo: '/images/team/headshots/photo_thanishka.jpg' },
         { name: 'Abhijeet', role: 'Mechanical Team', photo: '/images/team/headshots/photo_C.jpg' },
         { name: 'Aditya', role: 'Mechanical Team', photo: null },
         { name: 'Samuel', role: 'Mechanical Team', photo: '/images/team/headshots/photo_samuel.jpg' },
       ],
       subteams: [
         { name: 'Mechanical Team', members: ['Sanjit', 'Akash', 'Abhijeet', 'Aditya', 'Samuel'] },
-        { name: 'Programming Team', members: ['Colter Hardy'] }
+        { name: 'Programming Team', members: ['Colter Hardy', 'Thanishka Janumpally'] }
       ]
     }
   }
