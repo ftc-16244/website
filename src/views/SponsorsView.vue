@@ -47,7 +47,7 @@
             <RouterLink to="/contact" class="btn btn-primary" style="margin-top:2rem">Contact Us to Sponsor</RouterLink>
           </div>
           <div class="sponsor-logo-showcase">
-            <img src="/images/logo_vertical.png" alt="Trailblazers Branding" class="sponsor-brand-img" />
+            <img src="/images/logo_circle.png" alt="Trailblazers Branding" class="sponsor-brand-img" />
           </div>
         </div>
       </div>
@@ -157,10 +157,7 @@ export default {
 .sponsor-brand-img {
   width: 280px;
   height: 280px;
-  object-fit: cover;
-  border-radius: 50%;
-  -webkit-mask-image: radial-gradient(circle, black 48%, transparent 75%);
-  mask-image: radial-gradient(circle, black 48%, transparent 75%);
+  object-fit: contain;
 }
 
 @media (max-width: 900px) {
