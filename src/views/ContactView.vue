@@ -94,7 +94,7 @@ export default {
         { label: 'Email', value: 'trailblazers16244@gmail.com', href: 'mailto:trailblazers16244@gmail.com' },
         { label: 'Location', value: 'Dunlap, Illinois', href: null },
         { label: 'League', value: 'Peoria FTC League', href: null },
-        { label: 'Coaches', value: '2 Coaches · 9 Members', href: null },
+        { label: 'Coaches', value: '2 Coaches · 8 Members', href: null },
       ],
       faqs: [
         { q: 'How can I join the Trailblazers?', a: '[ Describe tryout process, requirements, and when recruitment opens. ]', open: false },

@@ -120,7 +120,7 @@ export default {
   height: 110px;
   margin: 0 auto 1.2rem;
   position: relative;
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  border-radius: 8px;
   background: linear-gradient(135deg, var(--blue-primary), var(--blue-medium));
   display: flex;
   align-items: center;
@@ -136,13 +136,11 @@ export default {
   display: block;
 }
 
-/* Logo placeholder: rotated diamond inside the hexagon */
+/* Logo placeholder */
 .avatar-logo-wrap {
-  width: 70%;
-  height: 70%;
-  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,10 +148,9 @@ export default {
 }
 
 .avatar-logo {
-  width: 130%;
-  height: 130%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transform: rotate(-45deg);
 }
 .member-role { color: var(--blue-light); font-size: 0.9rem; font-weight: 600; margin: 0.3rem 0; }
 .member-bio { color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.6; }
