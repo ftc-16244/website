@@ -189,12 +189,6 @@
   width: 360px;
   height: 360px;
   object-fit: contain;
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
 }
 
 .stats-bar {
