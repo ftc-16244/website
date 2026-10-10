@@ -12,6 +12,7 @@
         <div class="hero-buttons">
           <RouterLink to="/team" class="btn btn-primary">Meet Our Team</RouterLink>
           <RouterLink to="/competitions" class="btn btn-outline">Our Seasons</RouterLink>
+          <RouterLink :to="{ path: '/contact', query: { subject: 'Join the Team' } }" class="btn btn-primary">Apply to Join the Team</RouterLink>
         </div>
       </div>
       <div class="hero-visual">

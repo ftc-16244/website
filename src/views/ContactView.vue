@@ -104,6 +104,10 @@ export default {
       ]
     }
   },
+  created() {
+    const subject = this.$route.query.subject
+    if (subject) this.form.subject = subject
+  },
   methods: {
     submitForm() {
       this.submitted = true

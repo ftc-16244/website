@@ -57,7 +57,7 @@
           Interested in joining for the 2026–27 season? We're always looking for motivated students
           passionate about robotics, programming, design, or business/outreach. Reach out to learn more.
         </p>
-        <RouterLink to="/contact" class="btn btn-primary">Get In Touch</RouterLink>
+        <RouterLink :to="{ path: '/contact', query: { subject: 'Join the Team' } }" class="btn btn-primary">Apply to Join the Team</RouterLink>
       </div>
     </section>
   </main>
