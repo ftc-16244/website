@@ -4,7 +4,7 @@
       <div class="container">
         <h1>Meet The Team</h1>
         <div class="divider"></div>
-        <p>8 members. 2 coaches. One goal.</p>
+        <p>7 members. 2 coaches. One goal.</p>
       </div>
     </section>
 
@@ -68,35 +68,34 @@ export default {
   data() {
     return {
       members: [
-        { name: 'Anvita', role: 'Presenter', bio: 'Led team presentations and represented the Trailblazers at judging sessions throughout the season.', photo: '/images/team/headshots/photo_anvita.jpg' },
-        { name: 'Sanjit', role: 'Chassis Lead', bio: 'Designed the state robot chassis: short body with closer drive wheels, black polycarbonate plates with blue accents.', photo: '/images/team/headshots/photo_A.jpg' },
+        { name: 'Anvita', role: 'Presenter / Outreach', bio: 'Led team presentations and represented the Trailblazers at judging sessions throughout the season.', photo: '/images/team/headshots/photo_anvita.jpg' },
+        { name: 'Sanjit', role: 'Chassis Lead / Social Media', bio: 'Designed the state robot chassis: short body with closer drive wheels, black polycarbonate plates with blue accents.', photo: '/images/team/headshots/photo_A.jpg' },
         { name: 'Akash', role: 'Intake / Transfer', bio: 'Built the mecanum vectored intake with custom Manar wheels and the open waterslide transfer system.', photo: '/images/team/headshots/photo_akash.jpg' },
         { name: 'Colter Hardy', role: 'Lead Programmer', bio: 'Leads the programming sub-team, writing autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.', photo: '/images/team/headshots/photo_colter.jpg' },
         { name: 'Abhijeet', role: 'Shooter Lead', bio: 'Engineered the custom 3D-printed turret bearing (240° rotation) and dual-motor flywheel shooter.', photo: '/images/team/headshots/photo_C.jpg' },
-        { name: 'Manar', role: 'Captain / Redesign', bio: 'Led the mid-season robot redesign after coordinating with FRC expert Ben Martin from Team 2481.', photo: null },
         { name: 'Aditya', role: 'Mechanical / CAD', bio: 'Contributes to robot design and CAD modeling, helping build and iterate on mechanical systems throughout the season.', photo: null },
         { name: 'Samuel', role: 'Mechanical / CAD', bio: 'Works on robot construction and CAD, bringing new ideas to the mechanical sub-team as a first-year member.', photo: null },
       ],
       subteams: [
         {
-          name: 'Mechanical & Design',
-          desc: 'Responsible for chassis design, robot assembly, and all physical mechanisms including intake, transfer, and shooter.',
-          members: ['Sanjit', 'Akash', 'Manar', 'Abhijeet', 'Aditya', 'Samuel']
+          name: 'Mechanical',
+          desc: 'Responsible for chassis design, robot assembly, CAD, and all physical mechanisms including intake, transfer, and shooter.',
+          members: ['Sanjit', 'Akash', 'Abhijeet', 'Aditya', 'Samuel']
         },
         {
           name: 'Programming',
           desc: 'Wrote the autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.',
-          members: ['Colter Hardy', '[ Member ]']
+          members: ['Colter Hardy']
         },
         {
-          name: 'Strategy & Scouting',
-          desc: 'Analyzed game rules, scouted opponents, ran SWOT analyses after each meet, and set season priorities.',
-          members: ['[ Member ]']
+          name: 'Social Media',
+          desc: 'Runs the team\'s social media accounts and shares the season with the community.',
+          members: ['Sanjit']
         },
         {
-          name: 'Business & Outreach',
-          desc: 'Managed the engineering portfolio, judging presentations, sponsor relations, and community outreach events.',
-          members: ['Anvita', '[ Member ]']
+          name: 'Outreach',
+          desc: 'Presentations, judging, sponsor relations, and community outreach events.',
+          members: ['Anvita']
         }
       ]
     }

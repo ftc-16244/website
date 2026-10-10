@@ -34,7 +34,7 @@
             <span class="stat-label">Team Number</span>
           </div>
           <div class="stat">
-            <span class="stat-num">8</span>
+            <span class="stat-num">7</span>
             <span class="stat-label">Team Members</span>
           </div>
           <div class="stat">
@@ -52,7 +52,7 @@
           <h2 class="section-title" style="text-align:left">Who We Are</h2>
           <div class="divider" style="margin-left:0"></div>
           <p>
-            The Trailblazers (FTC #16244) are a diverse group of 8 members from many different schools
+            The Trailblazers (FTC #16244) are a diverse group of 7 members from many different schools
             in the Dunlap, Illinois area, competing in the Peoria League. For 7 seasons we've built
             competitive robots, grown as engineers, and given back to our community through STEM outreach.
           </p>

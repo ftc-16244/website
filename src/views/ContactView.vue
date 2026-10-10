@@ -78,7 +78,7 @@ export default {
         { label: 'Email', value: 'ftc16244@gmail.com', href: 'mailto:ftc16244@gmail.com' },
         { label: 'Location', value: 'Dunlap, Illinois', href: null },
         { label: 'League', value: 'Peoria FTC League', href: null },
-        { label: 'Coaches', value: '2 Coaches · 8 Members', href: null },
+        { label: 'Coaches', value: '2 Coaches · 7 Members', href: null },
       ]
     }
   },
