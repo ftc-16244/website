@@ -26,11 +26,6 @@ body {
   background-color: var(--blue-darkest);
   color: var(--white);
   line-height: 1.6;
-  cursor: none;
-}
-
-a, button, [role="button"], .btn, input, select, textarea {
-  cursor: none;
 }
 
 a {
