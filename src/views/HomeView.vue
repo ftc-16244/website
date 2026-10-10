@@ -172,8 +172,8 @@
 
 .hero-glow-orb {
   position: absolute;
-  width: 420px;
-  height: 420px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0,87,255,0.25) 0%, rgba(0,87,255,0.08) 50%, transparent 70%);
   animation: pulse-orb 4s ease-in-out infinite;
@@ -186,8 +186,8 @@
 }
 
 .hero-logo-img {
-  width: 420px;
-  height: 420px;
+  width: 360px;
+  height: 360px;
   object-fit: contain;
   animation: float 4s ease-in-out infinite;
 }
