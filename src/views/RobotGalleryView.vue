@@ -149,7 +149,7 @@ export default {
 
 <style scoped>
 .page-header {
-  background: var(--blue-primary);
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
   padding: 5rem 0;
   text-align: center;
 }
@@ -185,6 +185,7 @@ export default {
   background-color: rgba(0,56,184,0.1);
   object-fit: contain;
   height: 320px;
+  box-shadow: 0 0 30px rgba(0,87,255,0.25);
 }
 
 .thumb-row { display: flex; gap: 0.7rem; }

@@ -15,13 +15,14 @@
           <h2 class="section-title" style="text-align:left">Our Story</h2>
           <div class="divider" style="margin-left:0"></div>
           <p>
-            We're the Trailblazers, FTC #16244, from Dunlap, Illinois. This is our seventh year. We compete in
-            the Peoria League, and the 8 of us come from a bunch of different schools.
+            The Trailblazers (#16244) are a 7-year FIRST Tech Challenge team based in Dunlap, Illinois,
+            competing in the Peoria League. We are a diverse group of 8 members drawn from many different
+            schools, united by a passion for robotics and engineering.
           </p>
           <p style="margin-top: 1rem;">
-            This season, DECODE, we rebuilt the robot completely after Meet 1 and again before Meet 3, wrote our own
-            auto-aim, and made it to State. We also took the robot to Caterpillar's Engineering Day in Peoria
-            to show it to 50+ elementary students.
+            Season after season we've grown by iterating on our robot designs, sharpening our programming,
+            and deepening our community outreach. The 2025–26 DECODE season saw us reach State, backed
+            by some of our most ambitious engineering yet.
           </p>
           <div style="margin-top:1.5rem">
             <span class="tag">Dunlap, IL</span>
@@ -187,7 +188,7 @@ export default {
 
 <style scoped>
 .page-header {
-  background: var(--blue-primary);
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
   padding: 5rem 0;
   text-align: center;
 }
@@ -205,10 +206,11 @@ export default {
   width: 100%;
   border-radius: 12px;
   border: 2px solid var(--blue-primary);
+  box-shadow: 0 8px 30px rgba(0,87,255,0.2);
 }
 
 .motto-section {
-  background: var(--blue-primary);
+  background: linear-gradient(135deg, var(--blue-medium), var(--blue-primary));
   padding: 4rem 2rem;
 }
 .motto-text {
@@ -235,6 +237,7 @@ export default {
   border-radius: 12px;
   overflow: hidden;
   border: 2px solid var(--blue-primary);
+  box-shadow: 0 8px 30px rgba(0,87,255,0.25);
   background-color: #000;
 }
 

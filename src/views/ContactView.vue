@@ -116,7 +116,7 @@ export default {
 
 <style scoped>
 .page-header {
-  background: var(--blue-primary);
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
   padding: 5rem 0;
   text-align: center;
 }

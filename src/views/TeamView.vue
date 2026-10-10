@@ -8,28 +8,42 @@
       </div>
     </section>
 
-    <!-- Group photo -->
-    <section class="group-section">
-      <img src="/images/team/team_photo.jpg" alt="The Trailblazers team at Regionals" class="group-photo" />
+    <!-- Members Grid -->
+    <section class="section">
       <div class="container">
-        <ul class="roster">
-          <li v-for="m in members" :key="m.name">
-            <span class="roster-name">{{ m.name }}</span>
-            <span class="roster-role">{{ m.role }}</span>
-          </li>
-        </ul>
+        <h2 class="section-title">2025–26 Members</h2>
+        <div class="divider"></div>
+        <div class="grid-3">
+          <div class="card member-card" v-for="m in members" :key="m.name">
+            <div class="member-avatar">
+              <img v-if="m.photo" :src="m.photo" :alt="m.name" class="avatar-photo" />
+              <div v-else class="avatar-logo-wrap">
+                <img src="/images/logo.png" alt="Trailblazers" class="avatar-logo" />
+              </div>
+            </div>
+            <h3>{{ m.name }}</h3>
+            <p class="member-role">{{ m.role }}</p>
+            <p class="member-bio">{{ m.bio }}</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Sub-Teams -->
-    <section class="section" style="background-color: var(--blue-primary)">
+    <section class="section" style="background-color: rgba(0,56,184,0.15)">
       <div class="container">
-        <h2 class="section-title" style="text-align:left">Who Does What</h2>
-        <div class="divider" style="margin-left:0"></div>
-        <div class="subteam" v-for="sub in subteams" :key="sub.name">
-          <h3>{{ sub.name }}</h3>
-          <p class="subteam-desc">{{ sub.desc }}</p>
-          <p class="subteam-members">{{ sub.members.join(', ') }}</p>
+        <h2 class="section-title">Sub-Teams</h2>
+        <div class="divider"></div>
+        <div class="grid-2">
+          <div class="card subteam-card" v-for="sub in subteams" :key="sub.name">
+                        <div>
+              <h3>{{ sub.name }}</h3>
+              <p class="subteam-desc">{{ sub.desc }}</p>
+              <div style="margin-top:0.8rem">
+                <span class="tag" v-for="m in sub.members" :key="m">{{ m }}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -72,12 +86,17 @@ export default {
         {
           name: 'Programming',
           desc: 'Wrote the autonomous routines, teleop code, and the AIMBOT odometry-based automatic aiming system.',
-          members: ['Colter Hardy']
+          members: ['Colter Hardy', '[ Member ]']
+        },
+        {
+          name: 'Strategy & Scouting',
+          desc: 'Analyzed game rules, scouted opponents, ran SWOT analyses after each meet, and set season priorities.',
+          members: ['[ Member ]']
         },
         {
           name: 'Business & Outreach',
           desc: 'Managed the engineering portfolio, judging presentations, sponsor relations, and community outreach events.',
-          members: ['Anvita']
+          members: ['Anvita', '[ Member ]']
         }
       ]
     }
@@ -87,36 +106,60 @@ export default {
 
 <style scoped>
 .page-header {
-  background: var(--blue-primary);
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary));
   padding: 5rem 0;
   text-align: center;
 }
 .page-header h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; }
 .page-header p { color: var(--blue-lightest); font-size: 1.1rem; }
 
-.group-section { background: var(--blue-darkest); padding-bottom: 3rem; }
-.group-photo { width: 100%; max-height: 80vh; object-fit: cover; object-position: center 60%; display: block; }
-.roster {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem 2rem;
-  padding-top: 2rem;
-}
-.roster-name { display: block; font-size: 1.15rem; font-weight: 700; }
-.roster-role { display: block; color: var(--accent); font-size: 0.9rem; font-weight: 600; }
+.member-card { text-align: center; }
 
-.subteam { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 2rem; padding: 1.3rem 0; border-top: 1px solid rgba(255,255,255,0.25); align-items: baseline; }
-.subteam h3 { font-size: 1.15rem; }
-.subteam-desc { color: var(--blue-lightest); line-height: 1.6; }
-.subteam-members { color: var(--accent); font-weight: 600; }
-
-@media (max-width: 900px) {
-  .roster { grid-template-columns: repeat(2, 1fr); }
-  .subteam { grid-template-columns: 1fr; gap: 0.4rem; }
+.member-avatar {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1.2rem;
+  position: relative;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--blue-primary), var(--blue-medium));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
+/* Logo placeholder */
+.avatar-logo-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.2);
+}
+
+.avatar-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.member-role { color: var(--blue-light); font-size: 0.9rem; font-weight: 600; margin: 0.3rem 0; }
+.member-bio { color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.6; }
+
+.subteam-card { display: flex; gap: 1.5rem; align-items: flex-start; }
+.subteam-icon { font-size: 2.5rem; flex-shrink: 0; }
+.subteam-desc { color: var(--gray); font-size: 0.95rem; margin-top: 0.3rem; }
 
 .join-section {
-  background: var(--blue-darkest);
+  background: linear-gradient(135deg, rgba(0,56,184,0.3), rgba(0,87,255,0.15));
 }
 </style>
