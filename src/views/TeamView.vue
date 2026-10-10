@@ -11,7 +11,7 @@
     <!-- Members Grid -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">2025–26 Members</h2>
+        <h2 class="section-title">2026–27 Members</h2>
         <div class="divider"></div>
         <div class="grid-3">
           <div class="card member-card" v-for="m in members" :key="m.name">
@@ -54,7 +54,7 @@
         <h2 class="section-title">Join the Trailblazers</h2>
         <div class="divider"></div>
         <p style="color:var(--gray); max-width:600px; margin: 0 auto 2rem; line-height: 1.8">
-          Interested in joining for the 2026–27 season? We're always looking for motivated students
+          Interested in joining us this season? We're always looking for motivated students
           passionate about robotics, programming, design, or business/outreach. Reach out to learn more.
         </p>
         <RouterLink :to="{ path: '/contact', query: { subject: 'Join the Team' } }" class="btn btn-primary">Apply to Join the Team</RouterLink>

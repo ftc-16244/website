@@ -72,20 +72,20 @@
     <section class="section" style="background-color: rgba(0,56,184,0.15);">
       <div class="container">
         <h2 class="section-title">Current Season</h2>
-        <p class="section-subtitle">2025–2026 | DECODE</p>
+        <p class="section-subtitle">2026–2027 | BIOBUZZ</p>
         <div class="divider"></div>
         <div class="grid-3">
           <div class="card" style="text-align:center">
-                        <h3>Iterative Design</h3>
-            <p style="color: var(--gray); margin-top: 0.5rem">Three full robot redesigns from Meet 1 through State, with a custom turret shooter, mecanum intake, and open waterslide transfer.</p>
+            <h3>Pollination</h3>
+            <p style="color: var(--gray); margin-top: 0.5rem">Two-team alliances compete on a 12-foot square field, moving Pollen and Nectar around in a match that is all about pollination.</p>
           </div>
           <div class="card" style="text-align:center">
-                        <h3>AIMBOT</h3>
-            <p style="color: var(--gray); margin-top: 0.5rem">Built a fully automatic aiming system using odometry. No Limelight needed. Drastically improved shot accuracy over manual aim.</p>
+            <h3>Hives and Flowers</h3>
+            <p style="color: var(--gray); margin-top: 0.5rem">Launch enough Pollen and Nectar into a Hive and it tips to present the other cell. Four Flowers around the field take Pollen and Nectar, and alliances fight over them as the match ends.</p>
           </div>
           <div class="card" style="text-align:center">
-                        <h3>Outreach</h3>
-            <p style="color: var(--gray); margin-top: 0.5rem">Hosted workshops on CAD, sensors, portfolio & judging. Ran a demo at Caterpillar's Engineering Day for 50+ elementary students.</p>
+            <h3>Match Format</h3>
+            <p style="color: var(--gray); margin-top: 0.5rem">A 30-second autonomous period followed by two minutes of driver control. Last season, DECODE, took us to State.</p>
           </div>
         </div>
         <div style="text-align:center; margin-top: 2rem">
