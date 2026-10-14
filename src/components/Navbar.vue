@@ -49,6 +49,7 @@ export default {
   background-color: rgba(10, 35, 66, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--blue-primary);
+  padding-top: env(safe-area-inset-top);
 }
 
 .nav-container {
@@ -154,7 +155,7 @@ export default {
 
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
     right: 0;
     background-color: var(--blue-darkest);

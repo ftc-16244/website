@@ -153,7 +153,7 @@ export default {
   padding: 5rem 0;
   text-align: center;
 }
-.page-header h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; }
+.page-header h1 { font-size: clamp(1.8rem, 9vw, 3rem); overflow-wrap: anywhere; font-weight: 800; margin-bottom: 1rem; }
 .page-header p { color: var(--blue-lightest); font-size: 1.1rem; }
 
 .season-badge {
@@ -171,7 +171,7 @@ export default {
 
 .current-robot {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 3rem;
   align-items: start;
 }
@@ -188,9 +188,11 @@ export default {
   box-shadow: 0 0 30px rgba(0,87,255,0.25);
 }
 
-.thumb-row { display: flex; gap: 0.7rem; }
+.thumb-row { display: flex; gap: 0.7rem; min-width: 0; }
 .thumb {
   flex: 1;
+  min-width: 0;
+  width: 0;
   height: 80px;
   object-fit: contain;
   border-radius: 8px;

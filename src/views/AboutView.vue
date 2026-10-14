@@ -192,7 +192,7 @@ export default {
   padding: 5rem 0;
   text-align: center;
 }
-.page-header h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; }
+.page-header h1 { font-size: clamp(1.8rem, 9vw, 3rem); overflow-wrap: anywhere; font-weight: 800; margin-bottom: 1rem; }
 .page-header p { color: var(--blue-lightest); font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
 .story-grid {
